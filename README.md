@@ -9,11 +9,15 @@
 
 
 ## 🤖 모델 관련  
+STT, Diagram Recommendation / Generation, Keyword Extraction, Summarization, Chunking 등의 AI 기술을 통해, 회의 요약 보고서와 추천 다이어그램을 구현했습니다.
+
 - **STT 모델**  
   - Naver Clova API (CSR) 활용
-  - 도메인 맞춤형 키워드 사전 제작 
+  - 도메인 맞춤형 키워드 사전 제작
+  - STT의 품질을 높이기 위해 주파수 필터링, 속도 조절, Noise Reduction, 정규화 등의 전처리 과정 수행
 
-- **청크 모델**  
+- **청크 모델**
+  - LangChain의 Semantic Chunking과 Recursive Chunking 알고리즘을 사용
   - 화자분리된 텍스트 파일을 주제에 맞게 적절한 청크로 분리
   - 키워드 추출 및 시각화 데이터 자동 생성
  
@@ -22,12 +26,14 @@
   - 보고서 생성을 위한 청크별 제목, 주요 키워드, 요약 3문장으로 정리
 
 - **다이어그램 생성**  
-  - LLM을 통해 청크별로 다이어그램화 할지 여부를 결정
-  - 어떤 다이어그램으로 표현하는 것이 좋을지 결정
+  - LLM을 통해 각 청크의 다이어그램화 여부를 결정
+  - 각 요약에 대한 다이어그램 종류 추천
   - Mermaid Code 기반 다이어그램 생성
 
 
 ## 🎯 주요 성과  
+- 회의 요약 보고서
+
 - 요약 다이어그램 (프로젝트 로직)
 <img src="Picture Folder/Diagram_example.png" alt="Clerker" width="900"/>
 
