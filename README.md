@@ -35,7 +35,7 @@ STT, Diagram Recommendation / Generation, Keyword Extraction, Summarization, Chu
 - 회의 요약 보고서
 
 - 요약 다이어그램
-  (아래는 실제 회의 내용을 요약한 다이어그램이며, 평균적으로 회의 한 건당 약 10개의 요약 다이어그램이 생성됩니다.)
+  - 아래는 실제 회의 내용을 요약한 다이어그램이며, 평균적으로 회의 한 건당 약 10개의 요약 다이어그램이 생성됩니다.
 <img src="Picture Folder/Diagram_example.png" alt="Clerker" width="900"/>
 
 
